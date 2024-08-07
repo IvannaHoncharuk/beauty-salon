@@ -1,0 +1,70 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-latin-regular.woff2") format("woff2");
+}
+
+:root {
+  --color-brand: #2b7fff;
+  --color-primery: #011c44;
+  --color-secondary: #000000;
+  --color-background: #ffffff;
+}
+
+/* Base */
+
+body {
+  color: var(--color-primery);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: var(--color-background);
+  background-color: var(--color-brand);
+  border: 32px;
+}
+
+/* Navigation */
+
+.nav-link:hover {
+  color: var(--color-brand);
+}
+
+/* Hero section */
+
+.hero-title {
+  color: var(--color-brand);
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+}
