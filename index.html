@@ -58,7 +58,7 @@
           alt="Косметолог робить дівчині массаж обличчя"
         />
         <p>Косметологічна клініка</p>
-        <h1 class="hero-title" lang="en">Beauty zone</h1>
+        <h1 class="hero-title title capitalize" lang="en">Beauty zone</h1>
         <button type="button">Замовити дзвінок</button>
         <p class="hero-text">
           Запишись та отримай безкоштовну консультацію нашого косметолога
@@ -66,19 +66,19 @@
       </section>
       <section id="About-us-section">
         <article>
-          <h2 class="About-us-title">
+          <h2 class="title">
             Перевтілюйтесь в
-            <span class="title-span" lang="en">beauty zone!</span>
+            <span class="color-accent capitalize" lang="en">beauty zone!</span>
           </h2>
           <p class="about-us-text">
             Наша косметологічна клініка пропонує вам професійні послуги з
             догляду за шкірою обличчя та тіла.
           </p>
           <p class="about-us-text">
-            B <span class="text-span" lang="en">beauty zone</span> ми гарантуємо
-            найвищі стандарти якості та приємний сервіс. Наші косметологічні
-            процедури та препарати допоможуть вам підтримувати свою красу та
-            молодість. З нами краса назавжди!
+            B <span class="text-span capitalize" lang="en">beauty zone</span> ми
+            гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+            косметологічні процедури та препарати допоможуть вам підтримувати
+            свою красу та молодість. З нами краса назавжди!
           </p>
         </article>
         <div>
@@ -96,8 +96,8 @@
         </div>
       </section>
       <section id="Advantages-secton">
-        <h2 class="Advantages-title">
-          Чому люди <span class="advantages-span">обирають нас</span>
+        <h2 class="title">
+          Чому люди <span class="color-accent">обирають нас</span>
         </h2>
         <ul>
           <li>
@@ -124,9 +124,7 @@
         </ul>
       </section>
       <section id="Procedures-section">
-        <h2 class="procedures-title">
-          Наші <span class="procedures-span">процедури</span>
-        </h2>
+        <h2 class="title">Наші <span class="color-accent">процедури</span></h2>
         <ul>
           <li>
             <img
@@ -152,9 +150,7 @@
         </ul>
       </section>
       <section id="Contacts-section">
-        <h2 class="contacts-title">
-          Як нас <span class="contacts-span">знайти</span>
-        </h2>
+        <h2 class="title">Як нас <span class="color-accent">знайти</span></h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064052!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1722890216261!5m2!1suk!2spl"
           width="600"
@@ -166,28 +162,45 @@
         ></iframe>
       </section>
     </main>
-    <footer>
-      <nav>
+    <footer class="footer">
+      <nav class="footer-navigation">
         <a href="./index.html">
           <img src="./images/logo.svg" alt="Логотип косметологічної клініки" />
         </a>
         <ul>
-          <li><a href="#About-us-section">Про нас</a></li>
-          <li><a href="#Advantages-secton">Чому ми</a></li>
-          <li><a href="#Procedures-section">Наші процедури</a></li>
-          <li><a href="#Contacts-section">Контакти</a></li>
+          <li>
+            <a class="footer-navigation" href="#About-us-section">Про нас</a>
+          </li>
+          <li>
+            <a class="footer-navigation" href="#Advantages-secton">Чому ми</a>
+          </li>
+          <li>
+            <a class="footer-navigation" href="#Procedures-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a class="footer-navigation" href="#Contacts-section">Контакти</a>
+          </li>
         </ul>
       </nav>
       <address>
         <ul>
           <li>
-            <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+            <a class="footer-navigation" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <a class="footer-navigation" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/g9d3Pp55STnRg4po6" target="_blank"
+            <a
+              class="footer-navigation"
+              href="https://maps.app.goo.gl/g9d3Pp55STnRg4po6"
+              target="_blank"
               >Україна, м. Київ, вул. Тараса Шевченка 5</a
             >
           </li>
@@ -210,8 +223,11 @@
           </li>
         </ul>
       </address>
-      <a href="#" target="_blank">Політика конфіденційності</a>
-      <p>&copy; 2022 Дані захищені</p>
+      <a class="footer-navigation" href="#" target="_blank"
+        >Політика конфіденційності</a
+      >
+      <p class="footer-text">&copy; 2022 Дані захищені</p>
+      <img src="./images/footer.jpg" alt="Флакони косметичних засобів" />
     </footer>
   </body>
 </html>
