@@ -74,7 +74,7 @@
         <div class="container">
           <div class="about-us-container">
             <article class="about-us-content">
-              <h2 class="title">
+              <h2 class="about-us-title title">
                 Перевтілюйтесь в
                 <span class="color-accent capitalize" lang="en"
                   >beauty zone!</span
@@ -92,7 +92,7 @@
                 підтримувати свою красу та молодість. З нами краса назавжди!
               </p>
             </article>
-            <div>
+            <div class="about-us-pic">
               <img
                 src="./images/Aboutusfirst.jpg"
                 alt="Жінка з чорною стрілкою на обличчі"
@@ -110,32 +110,34 @@
       </section>
       <section class="section" id="Advantages-secton">
         <div class="container">
-          <h2 class="title">
-            Чому люди <span class="color-accent">обирають нас</span>
-          </h2>
-          <ul class="advantages-list">
-            <li>
-              <img src="./images/Game-icon.svg" alt="Game icon" />
-              <p class="advantages-text">
-                Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                від 5 років
-              </p>
-            </li>
-            <li>
-              <img src="./images/Medicine-icon.svg" alt="Medicine icon" />
-              <p class="advantages-text">
-                Використовуємо тільки професійне обладнання та косметику,
-                перевірену часом
-              </p>
-            </li>
-            <li>
-              <img src="./images/Crown-icon.svg" alt="Crown icon" />
-              <p class="advantages-text">
-                Наша мета - підкреслити переваги та приховати недоліки, а не
-                переробити
-              </p>
-            </li>
-          </ul>
+          <div class="advantages-container">
+            <h2 class="advantages-title title">
+              Чому люди <span class="color-accent">обирають нас</span>
+            </h2>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <img src="./images/Game-icon.svg" alt="Game icon" />
+                <p class="advantages-text">
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img src="./images/Medicine-icon.svg" alt="Medicine icon" />
+                <p class="advantages-text">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img src="./images/Crown-icon.svg" alt="Crown icon" />
+                <p class="advantages-text">
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section" id="Procedures-section">
@@ -185,77 +187,81 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <nav class="footer-navigation">
-          <a href="./index.html">
-            <img
-              src="./images/logo.svg"
-              alt="Логотип косметологічної клініки"
-            />
-          </a>
-          <ul>
-            <li>
-              <a class="footer-navigation" href="#About-us-section">Про нас</a>
-            </li>
-            <li>
-              <a class="footer-navigation" href="#Advantages-secton">Чому ми</a>
-            </li>
-            <li>
-              <a class="footer-navigation" href="#Procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a class="footer-navigation" href="#Contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="footer-navigation" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="footer-navigation" href="mailto:beautyzone@gmail.com"
-                >beautyzone@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer-navigation"
-                href="https://maps.app.goo.gl/g9d3Pp55STnRg4po6"
-                target="_blank"
-                >Україна, м. Київ, вул. Тараса Шевченка 5</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="tel:+380960000007">
-                <img src="./images/Telefon-icon.svg" alt="Telefon icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://pl-pl.facebook.com/" target="_blank">
-                <img src="./images/Facebook-icon.svg" alt="Facebook icon" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/accounts/login/"
-                target="_blank"
-              >
-                <img src="./images/Instagram-icon.svg" alt="Instagram icon" />
-              </a>
-            </li>
-          </ul>
-        </address>
-        <a class="footer-navigation" href="#" target="_blank"
-          >Політика конфіденційності</a
-        >
-        <p class="footer-text">&copy; 2022 Дані захищені</p>
-        <img src="./images/footer.jpg" alt="Флакони косметичних засобів" />
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <a class="footer-logo" href="./index.html">
+              <img
+                src="./images/logo.svg"
+                alt="Логотип косметологічної клініки"
+              />
+            </a>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="footer-link" href="#About-us-section">Про нас</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#Advantages-secton">Чому ми</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#Procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#Contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul>
+              <li>
+                <a class="footer-navigation" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="footer-navigation" href="mailto:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-navigation"
+                  href="https://maps.app.goo.gl/g9d3Pp55STnRg4po6"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="tel:+380960000007">
+                  <img src="./images/Telefon-icon.svg" alt="Telefon icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://pl-pl.facebook.com/" target="_blank">
+                  <img src="./images/Facebook-icon.svg" alt="Facebook icon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/accounts/login/"
+                  target="_blank"
+                >
+                  <img src="./images/Instagram-icon.svg" alt="Instagram icon" />
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div class="footer-info">
+            <a class="footer-navigation" href="#" target="_blank"
+              >Політика конфіденційності</a
+            >
+            <p class="footer-text">&copy; 2022 Дані захищені</p>
+          </div>
+          <img src="./images/footer.jpg" alt="Флакони косметичних засобів" />
+        </div>
       </div>
     </footer>
   </body>

@@ -156,6 +156,7 @@ button:hover {
   font-size: 140px;
   line-height: 0.8;
   margin-bottom: 40px;
+  max-width: 530px;
 }
 
 .hero-text {
@@ -170,6 +171,14 @@ button:hover {
   gap: 32px;
 }
 
+.about-us-content {
+  flex-basis: 50%;
+}
+
+.about-us-title {
+  max-width: 530px;
+}
+
 .about-us-text {
   font-size: 22px;
   line-height: 1.7;
@@ -179,10 +188,30 @@ button:hover {
   font-weight: 600;
 }
 
+.about-us-pic {
+  flex-basis: 50%;
+}
+
 /* Advantages section */
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-title {
+  max-width: 450px;
+}
+
 .advantages-list {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+advantages-item {
+  padding: 32px 24px;
 }
 
 .advantages-text {
@@ -198,9 +227,27 @@ button:hover {
 
 .footer {
   background-color: #011f4a;
+  padding: 56px 0;
 }
 
-.footer-navigation {
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-list {
+  flex-grow: 1;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-link {
   font-size: 16px;
   color: var(--color-background);
 }
