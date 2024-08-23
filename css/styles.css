@@ -235,6 +235,11 @@ advantages-item {
   justify-content: space-between;
 }
 
+.footer-nav {
+  display: flex;
+  gap: 50px;
+}
+
 .footer-logo {
   flex-grow: 1;
 }
@@ -250,6 +255,17 @@ advantages-item {
 .footer-link {
   font-size: 16px;
   color: var(--color-background);
+  font-style: normal;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.adress-icon {
+  fill: var(--color-background);
 }
 
 .footer-text {
