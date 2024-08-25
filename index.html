@@ -116,21 +116,29 @@
             </h2>
             <ul class="advantages-list">
               <li class="advantages-item">
-                <img src="./images/Game-icon.svg" alt="Game icon" />
+                <svg class="advantages-icon" width="48" height="48">
+                  <use href="./images/symbol-defs.svg#icon-game"></use>
+                </svg>
                 <p class="advantages-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
               </li>
               <li class="advantages-item">
-                <img src="./images/Medicine-icon.svg" alt="Medicine icon" />
+                <svg class="advantages-icon" width="48" height="48">
+                  <use
+                    href="./images/symbol-defs.svg#icon-medicinecosmetics"
+                  ></use>
+                </svg>
                 <p class="advantages-text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
               </li>
               <li class="advantages-item">
-                <img src="./images/Crown-icon.svg" alt="Crown icon" />
+                <svg class="advantages-icon" width="48" height="48">
+                  <use href="./images/symbol-defs.svg#icon-crown"></use>
+                </svg>
                 <p class="advantages-text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
@@ -142,46 +150,66 @@
       </section>
       <section class="section" id="Procedures-section">
         <div class="container">
-          <h2 class="title">
+          <h2 class="procedures-title title">
             Наші <span class="color-accent">процедури</span>
           </h2>
-          <ul>
-            <li>
-              <img
-                src="./images/Procedurefirst.jpg"
-                alt="Руки наносять крем дівчині на обличчя"
-              />
-              <h3>Маски для обличчя</h3>
-            </li>
-            <li>
-              <img
-                src="./images/Proceduresecond.jpg"
-                alt="Руки роблять ін'єкцію дівчині в обличчя"
-              />
-              <h3>Ін'єкції для обличчя</h3>
-            </li>
-            <li>
-              <img
-                src="./images/Procedurethree.jpg"
-                alt="Дівчині з закритими очима роблять кавітаційний пілінг"
-              />
-              <h3>Очищення обличчя</h3>
-            </li>
-          </ul>
+          <div class="procedures-container">
+            <button class="carousel-button" type="button">
+              <svg class="carousel-arrow" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+            <ul class="procedures-list">
+              <li class="procedure-item">
+                <img
+                  class="procedure-photo"
+                  src="./images/Procedurefirst.jpg"
+                  alt="Руки наносять крем дівчині на обличчя"
+                />
+                <h3 class="card-title">Маски для обличчя</h3>
+              </li>
+              <li class="procedure-item">
+                <img
+                  class="procedure-photo"
+                  src="./images/Proceduresecond.jpg"
+                  alt="Руки роблять ін'єкцію дівчині в обличчя"
+                />
+                <h3 class="card-title">Ін'єкції для обличчя</h3>
+              </li>
+              <li class="procedure-item">
+                <img
+                  class="procedure-photo"
+                  src="./images/Procedurethree.jpg"
+                  alt="Дівчині з закритими очима роблять кавітаційний пілінг"
+                />
+                <h3 class="card-title">Очищення обличчя</h3>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg class="carousel-arrow" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="section" id="Contacts-section">
         <div class="container">
-          <h2 class="title">Як нас <span class="color-accent">знайти</span></h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064052!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1722890216261!5m2!1suk!2spl"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <h2 class="contact-title title">
+              Як нас <span class="color-accent">знайти</span>
+            </h2>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064052!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1722890216261!5m2!1suk!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -213,7 +241,7 @@
             </ul>
           </nav>
           <address>
-            <ul>
+            <ul class="adress-list">
               <li class="footer-item">
                 <a class="footer-link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
@@ -229,7 +257,8 @@
                   class="footer-link"
                   href="https://maps.app.goo.gl/g9d3Pp55STnRg4po6"
                   target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                  >Україна, м. Київ, <br />
+                  вул. Тараса Шевченка 5</a
                 >
               </li>
             </ul>
