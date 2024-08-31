@@ -313,9 +313,48 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <form class="order-form-call" autocomplete="off">
+          <h2>Замовити дзвінок</h2>
+          <p>Запишіться безкоштовно та отримайте подарунок</p>
+          <div>
+            <label for="user-name"></label>
+            <input
+              class="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Ваше ім'я та прізвище"
+              required
+            />
+          </div>
+          <div>
+            <label for="user-tel"></label>
+            <input
+              class="user-tel"
+              type="text"
+              name="user-tel"
+              placeholder="Ваш номер телефону"
+              required
+            />
+          </div>
+          <div>
+            <label for="user-email"></label>
+            <input
+              class="user-email"
+              type="text"
+              name="user-email"
+              placeholder="Ваша електронна пошта"
+              required
+            />
+          </div>
+          <button type="submit">Записатись безкоштовно</button>
+          <p>
+            Натискаючи на кнопку я погоджуюсь з
+            <a href="#">політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
 
