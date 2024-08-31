@@ -75,7 +75,9 @@
         <div class="container">
           <p class="hero-maintext">Косметологічна клініка</p>
           <h1 class="hero-title title capitalize" lang="en">Beauty zone</h1>
-          <button type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
           <p class="hero-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -310,5 +312,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

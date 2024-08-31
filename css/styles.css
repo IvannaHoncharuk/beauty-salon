@@ -71,7 +71,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   padding: 16px 32px;
   margin-bottom: 14px;
   color: var(--color-background);
@@ -82,7 +82,7 @@ button {
   font-weight: 600;
 }
 
-button:hover {
+.button:hover {
   background-color: transparent;
   color: var(--color-primery);
 }
@@ -369,4 +369,42 @@ button:hover {
   font-size: 13px;
   color: #747272;
   margin-top: 16px;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-width: 680px;
+  background-color: var(--color-primery);
+  border-radius: 48px;
+  padding: 42px 144px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }
