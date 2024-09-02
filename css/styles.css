@@ -69,6 +69,7 @@ a {
   font-weight: 400;
   line-height: 1.2;
   text-decoration: none;
+  transition: color 0.2s, font-weight 0.2s;
 }
 
 .button {
@@ -80,6 +81,7 @@ a {
   border-radius: 32px;
   cursor: pointer;
   font-weight: 600;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover {
@@ -114,6 +116,14 @@ a {
 }
 
 /* Navigation */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -171,6 +181,7 @@ a {
   font-size: 12px;
   line-height: 1.5;
   color: #4a4a4a;
+  max-width: 220px;
 }
 
 /* About us section */
@@ -278,6 +289,10 @@ a {
   fill: var(--color-primery);
 }
 
+.carousel-arrow.next {
+  transform: rotate(180deg);
+}
+
 .carousel-button:hover {
   background-color: var(--color-brand);
   border-color: var(--color-brand);
@@ -302,7 +317,7 @@ a {
   font-size: 22px;
 }
 
-/* Contacts srction */
+/* Contacts srction  */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -313,8 +328,19 @@ a {
   margin-bottom: 48px;
 }
 
+.contact-form {
+  display: flex;
+  gap: 32px;
+}
+
 .contact-map {
   border-radius: 32px;
+  border: none;
+  flex-shrink: 0;
+}
+
+.contact-modal {
+  max-height: 480px;
 }
 
 /* Footer */
@@ -403,8 +429,71 @@ a {
   padding: 42px 144px;
 }
 
+.scroll {
+  overflow-y: auto;
+}
+
 .modal-btn-close {
   position: absolute;
   top: 42px;
   right: 42px;
+}
+
+/* Form */
+.modal-title {
+  color: var(--color-background);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.modal-text {
+  color: var(--color-background);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form-field {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.form-input {
+  border: 2px solid #747272;
+  background-color: transparent;
+  border-radius: 32px;
+  width: 100%;
+  padding: 18px 32px;
+  color: var(--color-background);
+}
+
+.form-input::placeholder {
+  color: var(--color-background);
+  font-size: 13px;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  color: #faf4ea;
+}
+
+.form-button:hover {
+  color: #faf4ea;
+}
+
+.form-text,
+.form-link {
+  color: #747272;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-link {
+  text-underline-offset: 2px;
+  text-decoration: underline;
 }
