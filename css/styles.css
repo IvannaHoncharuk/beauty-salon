@@ -359,6 +359,18 @@ header {
 .footer {
   background-color: #011f4a;
   padding: 56px 0;
+  position: relative;
+}
+
+.footer::after {
+  position: absolute;
+  background-image: url(../images/footer-medicine.png);
+  content: "";
+  width: 248px;
+  height: 153px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
 }
 
 .footer-container {
