@@ -192,6 +192,10 @@ header {
 }
 
 /* About us section */
+.about-us-section {
+  position: relative;
+}
+
 .about-us-container {
   display: flex;
   gap: 32px;
@@ -218,8 +222,19 @@ header {
   flex-basis: 50%;
 }
 
-.photo {
+.photo-black,
+.photo-white {
   border-radius: 50%;
+  position: absolute;
+}
+
+.photo-black {
+  top: 0;
+}
+
+.photo-white {
+  bottom: 0;
+  right: 100px;
 }
 
 /* Advantages section */
