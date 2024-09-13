@@ -237,28 +237,54 @@ header {
   right: 100px;
 }
 
+.big-star,
+.middle-star,
+.small-star {
+  position: absolute;
+  animation-name: stars;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+@keyframes stars {
+  from {
+    rotate: 0;
+    transform: scale(0);
+  }
+
+  to {
+    rotate: 180deg;
+    transform: scale(1);
+  }
+}
+
 .big-star {
   fill: #011f4a;
-  position: absolute;
   right: 450px;
   bottom: 200px;
 }
 
 .middle-star {
   fill: var(--color-brand);
-  position: absolute;
   right: 70px;
   top: 40px;
 }
 
 .small-star {
   fill: #747272;
-  position: absolute;
   right: 110px;
   top: 200px;
 }
 
 /* Advantages section */
+.advantage-section {
+  background-image: linear-gradient(
+    rgba(43, 127, 255, 0.2) 39.74%,
+    rgba(43, 127, 255, 0) 54.16%,
+    rgba(43, 127, 255, 0) 66.66%
+  );
+}
+
 .advantages-container {
   display: flex;
   flex-direction: column;
@@ -267,6 +293,8 @@ header {
 }
 
 .advantages-title {
+  margin: 0 auto;
+  margin-bottom: 48px;
   max-width: 450px;
 }
 
@@ -281,13 +309,14 @@ header {
 .advantages-item {
   flex-basis: calc((100% - 112px) / 3);
   padding: 32px 24px;
-
   border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
 }
 
 .advantages-icon {
   fill: var(--color-brand);
   margin-bottom: 8px;
+  margin-left: 102px;
 }
 
 .advantages-text {
@@ -299,6 +328,7 @@ header {
 
 /* Procedures section */
 .procedures-title {
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
